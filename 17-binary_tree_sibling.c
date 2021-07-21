@@ -2,8 +2,9 @@
 
 /**
  * binary_tree_sibling - Finds the sibling of a node
- * 
+ *
  * @node: node to check
+ * Return: sibling
  */
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
@@ -13,6 +14,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 
 	if (node == node->parent->left)
 		return (node->parent->right);
-		
+
 	return (node->parent->left);
 }
